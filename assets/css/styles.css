@@ -472,3 +472,152 @@ transition: background-color 0.3s ease;
 .back-to-top:hover {
 background-color: #0056b3;
 }
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .overlay-text {
+      font-size: 2.5rem;
+    }
+  
+    .overlay-subtext {
+      font-size: 1.3rem;
+    }
+  
+    .overlay-sub-subtext {
+      font-size: 1rem;
+    }
+  
+    .download-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .about-me-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-container {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 10px;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      display: none; /* You can toggle this with JS */
+    }
+  
+    .image-container {
+      height: 400px;
+    }
+  
+    .overlay-text {
+      font-size: 2rem;
+    }
+  
+    .overlay-subtext,
+    .overlay-sub-subtext {
+      font-size: 1rem;
+    }
+  
+    .download-button {
+      font-size: 13px;
+      padding: 8px 14px;
+    }
+  
+    .skills-grid,
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .timeline-item {
+      width: 100%;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  
+    .timeline-item.left,
+    .timeline-item.right {
+      left: 0;
+      text-align: left;
+    }
+  
+    .timeline::after {
+      left: 20px;
+    }
+  
+    .timeline-item::before {
+      left: 10px;
+    }
+  
+    .lay-text,
+    .lay-right-text,
+    .lay-center-text {
+      font-size: 0.85rem;
+      top: auto;
+      transform: none;
+      left: 10%;
+      right: 10%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px 0;
+    }
+  
+    .overlay-text {
+      font-size: 1.5rem;
+    }
+  
+    .overlay-subtext,
+    .overlay-sub-subtext {
+      font-size: 0.9rem;
+    }
+  
+    .download-button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  
+    .profile-image {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .skill-card h3 {
+      font-size: 1.1em;
+    }
+  
+    .card h3 {
+      font-size: 1.2em;
+    }
+  
+    .about-title {
+      font-size: 1.5em;
+    }
+  
+    .about-description {
+      font-size: 1em;
+    }
+  
+    .footer {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+  }
+  
